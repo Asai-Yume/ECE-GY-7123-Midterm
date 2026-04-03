@@ -62,7 +62,6 @@ Trained on V7 configuration, varying only `target_modules`:
 │   └── visualizations.ipynb            # All report figures
 ├── scripts/
 │   ├── fix_adapter_keys.py             # Remap Unsloth adapter keys → PEFT format
-│   └── compare_ablations.py            # Ablation analysis from submission CSVs
 ├── submissions/
 │   ├── submission_v7.csv               # SFT both modules (score: 14.20)
 │   ├── submission_v7_attn.csv          # Ablation: attention-only
