@@ -4,6 +4,8 @@
 
 Fine-tuning small language models (Qwen3.5-2B) to generate Scalable Vector Graphics (SVG) from text descriptions using QLoRA with 4-bit quantization.
 
+[Link to models on Google Drive](https://drive.google.com/drive/folders/1h56Rg8luJSKiiE1ZSaMiGk1P1Jq-ZUx9?usp=sharing)
+
 **Best Score: 14.35** (V8, completion-only SFT) · **Best SFT: 14.20** (V7) · **SFT+DPO: 14.19**
 
 ---
