@@ -88,7 +88,7 @@ Trained on V7 configuration, varying only `target_modules`:
 
 ### Quick Start (Inference Only)
 
-1. Download the V7 adapter from [TODO: link or instructions]
+1. Download the V7 adapter from Google Drive
 2. Open `notebooks/inference_adapter_fixed.ipynb` in Colab
 3. Update `ADAPTER_PATH` to point to your adapter directory
 4. Run all cells — generates 1,000 SVGs in ~5 hours on T4
