@@ -94,7 +94,7 @@ Trained on V7 configuration, varying only `target_modules`:
 ### Full Training (V7)
 
 1. Upload `train.csv` and `test.csv` to Google Drive
-2. Open `notebooks/training_v7_colab.ipynb` in Colab
+2. Open `notebooks/training_v7.ipynb` in Colab
 3. Update `PROJECT_DIR` to your Drive path
 4. Run all cells — trains in ~16 hours on RTX PRO 6000, then runs inference in the same session
 
