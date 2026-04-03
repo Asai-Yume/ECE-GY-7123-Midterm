@@ -70,8 +70,7 @@ Trained on V7 configuration, varying only `target_modules`:
 │   ├── ablation_viewbox.png
 │   └── output_length_dist.png
 ├── report/
-│   ├── acl_latex.tex                   # ACL-format report
-│   └── custom.bib                      # Bibliography
+│   ├── ECE_GY_7123_Midterm.pdf
 └── README.md
 ```
 
