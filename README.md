@@ -62,12 +62,6 @@ Trained on V7 configuration, varying only `target_modules`:
 │   └── visualizations.ipynb            # All report figures
 ├── scripts/
 │   ├── fix_adapter_keys.py             # Remap Unsloth adapter keys → PEFT format
-├── submissions/
-│   ├── submission_v7.csv               # SFT both modules (score: 14.20)
-│   ├── submission_v7_attn.csv          # Ablation: attention-only
-│   ├── submission_v7_mlp.csv           # Ablation: MLP-only
-│   ├── submission_v8.csv               # Completion-only SFT (score: 14.35)
-│   └── submission_final.csv            # SFT+DPO (score: 14.19)
 ├── figures/
 │   ├── score_progression.png
 │   ├── compression_analysis.png
@@ -109,7 +103,7 @@ Trained on V7 configuration, varying only `target_modules`:
 
 To reproduce the LoRA target module ablation:
 
-1. Copy `training_v7_colab.ipynb` twice
+1. Copy `training_v7.ipynb` twice
 2. In the attention-only copy, change `target_modules` to `['q_proj','k_proj','v_proj','o_proj']`
 3. In the MLP-only copy, change `target_modules` to `['gate_proj','up_proj','down_proj']`
 4. Update `adapter_save_dir` and `SUBMISSION_PATH` in each copy
@@ -117,7 +111,7 @@ To reproduce the LoRA target module ablation:
 
 ### DPO Training
 
-1. Open `notebooks/training_dpo_colab.ipynb` in Colab
+1. Open `notebooks/training_dpo.ipynb` in Colab
 2. Set `RUN_SFT = True` for first run (or `False` if reusing a saved SFT adapter)
 3. Set `RUN_BUILD_DPO = True` and `RUN_DPO = True`
 4. Mining + DPO training takes ~4 hours on top of SFT
